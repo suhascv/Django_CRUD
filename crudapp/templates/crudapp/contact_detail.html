@@ -1,0 +1,15 @@
+{% extends 'crudapp/base.html' %}
+{% block content %}
+<div class='container fluid'>
+    <div class='row'> 
+<h1>{{ contact.firstName }}
+{{ contact.lastName }}</h1>
+<h3>{{ contact.email }}</h3>
+<h3>{{ contact.phone }}</h3>
+<h3>{{ contact.address }}</h3>
+<h3>{{ contact.createdAt }}</h3>
+
+<p style="font-family: cursive;font-weight: bolder; font-size: 50px;color: darkblue; ">{{ contact.lastName }} is a {{ contact.description }}</p>
+</div>
+</div>
+{% endblock %}
